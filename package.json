@@ -6,7 +6,9 @@
   "scripts": {
     "server": "nodemon app.js",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node app.js"
+    "start": "node app.js",
+    "client": "npm start --prefix ./heuristic-tool",
+    "dev": "concurrently \"npm start\" \"npm run heuristic-tool\""
   },
   "keywords": [],
   "author": "",
